@@ -5,7 +5,7 @@
                 <div class="nav-toggle text-light"></div>
                 <div class="nav-menus-wrapper">
                     <ul class="nav-menu">
-                    
+                        <li><router-link to="/">Home</a></li>
                         <li><a href="#" class="pl-0">Home</a>
                             <ul class="nav-dropdown nav-submenu">
                                 <li><a href="index.html">Home 1</a></li>

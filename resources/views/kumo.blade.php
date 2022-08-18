@@ -1,115 +1,26 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-		<meta charset="utf-8" />
-		<meta name="author" content="Themezhub" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">		
-        <title>La Able Fashion Collection</title>
-		 
-        <!-- Custom CSS -->
-        <link href="{{('kumo/css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-	
-		 <!-- ============================================================== -->
-        <!-- Preloader - style you can find in spinners.css -->
-        <!-- ============================================================== -->
-       <div class="preloader"></div>
+	<meta charset="utf-8" />
+	<meta name="author" content="Squarem " />
+	<meta name="viewport" content="width=device-width, initial-scale=1">		
+	<title>La Able Fashion Collection</title>
 		
-        <!-- ============================================================== -->
-        <!-- Main wrapper - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-        <div id="main-wrapper">
+	<!-- Custom CSS -->
+	<link href="{{asset('kumo/css/styles.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="corner">
+	    <div class="preloader"></div>
+	    <div id="main-wrapper">
 			@include('partials.kumo.top')
 			@include('partials.kumo.header')
 			@include('partials.kumo.nav')
 			<div class="clearfix"></div>
             <router-view></router-view>
             <vue-progressbar/>
-			<div class="home-slider margin-bottom-0">
-
-				<!-- Slide -->
-				<div data-background-image="assets/img/banner-29.png" class="item">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="home-slider-container">
-
-									<!-- Slide Title -->
-									<div class="home-slider-desc">
-										<div class="home-slider-title mb-4">
-											<h5 class="theme-cl fs-sm ft-ragular mb-0">Watch Collection</h5>
-											<h1 class="mb-1 ft-bold lg-heading">New Sale<br>Watch Collections</h1>
-											<span class="trending">There's nothing like trend</span>
-										</div>
-
-										<a href="#" class="btn stretched-link borders">Shop Now<i class="lni lni-arrow-right ml-2"></i></a>
-									</div>
-									<!-- Slide Title / End -->
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Slide -->
-				<div data-background-image="assets/img/banner-30.png" class="item">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="home-slider-container">
-
-									<!-- Slide Title -->
-									<div class="home-slider-desc">
-										<div class="home-slider-title mb-4">
-											<h5 class="theme-cl fs-sm ft-ragular mb-0">50% Off Sale</h5>
-											<h1 class="mb-1 ft-bold lg-heading">Modern Style<br>Watch Collections</h1>
-											<span class="trending">There's nothing like trend</span>
-										</div>
-
-										<a href="#" class="btn stretched-link borders">Shop Now<i class="lni lni-arrow-right ml-2"></i></a>
-									</div>
-									<!-- Slide Title / End -->
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Slide -->
-				<div data-background-image="assets/img/banner-24.png" class="item">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="home-slider-container">
-
-									<!-- Slide Title -->
-									<div class="home-slider-desc">
-										<div class="home-slider-title mb-4">
-											<h5 class="theme-cl fs-sm ft-ragular mb-0">Winter Collection</h5>
-											<h1 class="mb-1 ft-bold lg-heading">New Winter<br>Collections 2021</h1>
-											<span class="trending">There's nothing like trend</span>
-										</div>
-
-										<a href="#" class="btn stretched-link borders">Shop Now<i class="lni lni-arrow-right ml-2"></i></a>
-									</div>
-									<!-- Slide Title / End -->
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!-- ============================ Hero Banner End ================================== -->
-			
-			<!-- ======================= Product List ======================== -->
 			<section class="middle">
 				<div class="container">
-				
 					<div class="row justify-content-center">
 						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 							<div class="sec_title position-relative text-center">
@@ -118,294 +29,6 @@
 							</div>
 						</div>
 					</div>
-					
-					<div class="row align-items-center rows-products">			
-						<!-- Single -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-6">
-							<div class="product_grid card b-0">
-								<div class="badge bg-info text-white position-absolute ft-regular ab-left text-upper">Sale</div>
-								<div class="card-body p-0">
-									<div class="shop_thumb position-relative">
-										<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/14.png" alt="..."></a>
-										<div class="product-left-hover-overlay">
-											<ul class="left-over-buttons">
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-wishlist"><i class="far fa-heart position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-addcart"><i class="fas fa-shopping-basket position-absolute"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
-									<div class="text-left">
-										<div class="text-left">
-											<div class="elso_titl"><span class="small">Mobiles</span></div>
-											<h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Killore iPhone 12</a></h5>
-											<div class="star-rating align-items-center d-flex justify-content-left mb-2 p-0">
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star"></i>
-											</div>
-											<div class="elis_rty"><span class="ft-bold text-dark fs-sm">$99 - $129</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Single -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-6">
-							<div class="product_grid card b-0">
-								<div class="badge bg-info text-white position-absolute ft-regular ab-left text-upper">Sale</div>
-								<div class="badge bg-danger text-white position-absolute ft-regular ab-right text-upper">-40%</div>
-								<div class="card-body p-0">
-									<div class="shop_thumb position-relative">
-										<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/15.png" alt="..."></a>
-										<div class="product-left-hover-overlay">
-											<ul class="left-over-buttons">
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-wishlist"><i class="far fa-heart position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-addcart"><i class="fas fa-shopping-basket position-absolute"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
-									<div class="text-left">
-										<div class="text-left">
-											<div class="elso_titl"><span class="small">Headphones</span></div>
-											<h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Killore Headphone</a></h5>
-											<div class="star-rating align-items-center d-flex justify-content-left mb-2 p-0">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-											</div>
-											<div class="elis_rty"><span class="ft-bold text-dark fs-sm">$129</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Single -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-6">
-							<div class="product_grid card b-0">
-								<div class="badge bg-success text-white position-absolute ft-regular ab-left text-upper">Sale</div>
-								<div class="card-body p-0">
-									<div class="shop_thumb position-relative">
-										<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/17.png" alt="..."></a>
-										<div class="product-left-hover-overlay">
-											<ul class="left-over-buttons">
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-wishlist"><i class="far fa-heart position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-addcart"><i class="fas fa-shopping-basket position-absolute"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
-									<div class="text-left">
-										<div class="text-left">
-											<div class="elso_titl"><span class="small">Mobiles</span></div>
-											<h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Ziome iPhone 11</a></h5>
-											<div class="star-rating align-items-center d-flex justify-content-left mb-2 p-0">
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-											</div>
-											<div class="elis_rty"><span class="ft-bold text-dark fs-sm">$99 - $129</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Single -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-6">
-							<div class="product_grid card b-0">
-								<div class="badge bg-info text-white position-absolute ft-regular ab-left text-upper">New</div>
-								<div class="badge bg-danger text-white position-absolute ft-regular ab-right text-upper">-55%</div>
-								<div class="card-body p-0">
-									<div class="shop_thumb position-relative">
-										<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/18.png" alt="..."></a>
-										<div class="product-left-hover-overlay">
-											<ul class="left-over-buttons">
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-wishlist"><i class="far fa-heart position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-addcart"><i class="fas fa-shopping-basket position-absolute"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
-									<div class="text-left">
-										<div class="text-left">
-											<div class="elso_titl"><span class="small">Mobiles</span></div>
-											<h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Pillos Android Phone</a></h5>
-											<div class="star-rating align-items-center d-flex justify-content-left mb-2 p-0">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-											</div>
-											<div class="elis_rty"><span class="ft-bold text-dark fs-sm">$50 - $149</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Single -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-6">
-							<div class="product_grid card b-0">
-								<div class="badge bg-success text-white position-absolute ft-regular ab-left text-upper">Sale</div>
-								<div class="badge bg-danger text-white position-absolute ft-regular ab-right text-upper">-30%</div>
-								<div class="card-body p-0">
-									<div class="shop_thumb position-relative">
-										<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/19.png" alt="..."></a>
-										<div class="product-left-hover-overlay">
-											<ul class="left-over-buttons">
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-wishlist"><i class="far fa-heart position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-addcart"><i class="fas fa-shopping-basket position-absolute"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
-									<div class="text-left">
-										<div class="text-left">
-											<div class="elso_titl"><span class="small">Camera</span></div>
-											<h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Phot Video Camera</a></h5>
-											<div class="star-rating align-items-center d-flex justify-content-left mb-2 p-0">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-											</div>
-											<div class="elis_rty"><span class="ft-bold text-dark fs-sm">$199</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Single -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-6">
-							<div class="product_grid card b-0">
-								<div class="badge bg-info text-white position-absolute ft-regular ab-left text-upper">New</div>
-								<div class="card-body p-0">
-									<div class="shop_thumb position-relative">
-										<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/20.png" alt="..."></a>
-										<div class="product-left-hover-overlay">
-											<ul class="left-over-buttons">
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-wishlist"><i class="far fa-heart position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-addcart"><i class="fas fa-shopping-basket position-absolute"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
-									<div class="text-left">
-										<div class="text-left">
-											<div class="elso_titl"><span class="small">Headphone</span></div>
-											<h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">New Croft Headphone</a></h5>
-											<div class="star-rating align-items-center d-flex justify-content-left mb-2 p-0">
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star"></i>
-											</div>
-											<div class="elis_rty"><span class="ft-bold text-dark fs-sm">$110 - $600</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Single -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-6">
-							<div class="product_grid card b-0">
-								<div class="badge bg-success text-white position-absolute ft-regular ab-left text-upper">Sale</div>
-								<div class="card-body p-0">
-									<div class="shop_thumb position-relative">
-										<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/21.png" alt="..."></a>
-										<div class="product-left-hover-overlay">
-											<ul class="left-over-buttons">
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-wishlist"><i class="far fa-heart position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-addcart"><i class="fas fa-shopping-basket position-absolute"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
-									<div class="text-left">
-										<div class="text-left">
-											<div class="elso_titl"><span class="small">TV/LCD</span></div>
-											<h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">32 Inch Sony TV</a></h5>
-											<div class="star-rating align-items-center d-flex justify-content-left mb-2 p-0">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-											</div>
-											<div class="elis_rty"><span class="ft-bold text-dark fs-sm">$99 - $110</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Single -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-6">
-							<div class="product_grid card b-0">
-								<div class="badge bg-info text-white position-absolute ft-regular ab-left text-upper">New</div>
-								<div class="badge bg-danger text-white position-absolute ft-regular ab-right text-upper">-60%</div>
-								<div class="card-body p-0">
-									<div class="shop_thumb position-relative">
-										<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/22.png" alt="..."></a>
-										<div class="product-left-hover-overlay">
-											<ul class="left-over-buttons">
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-wishlist"><i class="far fa-heart position-absolute"></i></a></li>
-												<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center snackbar-addcart"><i class="fas fa-shopping-basket position-absolute"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
-									<div class="text-left">
-										<div class="text-left">
-											<div class="elso_titl"><span class="small">Headphone</span></div>
-											<h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Xiomi 13 Headphone</a></h5>
-											<div class="star-rating align-items-center d-flex justify-content-left mb-2 p-0">
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star filled"></i>
-												<i class="fas fa-star"></i>
-											</div>
-											<div class="elis_rty"><span class="ft-bold text-dark fs-sm">$119</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					
 					<div class="row justify-content-center">
 						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 							<div class="position-relative text-center">
@@ -459,7 +82,7 @@
 										<div class="badge bg-info text-white position-absolute ft-regular ab-left text-upper">Sale</div>
 										<div class="card-body p-0">
 											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/9.png" alt="..."></a>
+												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/9.png')}}" alt="..."></a>
 												<div class="product-left-hover-overlay">
 													<ul class="left-over-buttons">
 														<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
@@ -495,7 +118,7 @@
 										<div class="badge bg-danger text-white position-absolute ft-regular ab-right text-upper">-40%</div>
 										<div class="card-body p-0">
 											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/10.png" alt="..."></a>
+												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/10.png')}}" alt="..."></a>
 												<div class="product-left-hover-overlay">
 													<ul class="left-over-buttons">
 														<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
@@ -530,7 +153,7 @@
 										<div class="badge bg-success text-white position-absolute ft-regular ab-left text-upper">Sale</div>
 										<div class="card-body p-0">
 											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/11.png" alt="..."></a>
+												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/11.png')}}" alt="..."></a>
 												<div class="product-left-hover-overlay">
 													<ul class="left-over-buttons">
 														<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
@@ -566,7 +189,7 @@
 										<div class="badge bg-danger text-white position-absolute ft-regular ab-right text-upper">-55%</div>
 										<div class="card-body p-0">
 											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/4.png" alt="..."></a>
+												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/4.png')}}" alt="..."></a>
 												<div class="product-left-hover-overlay">
 													<ul class="left-over-buttons">
 														<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
@@ -602,7 +225,7 @@
 										<div class="badge bg-danger text-white position-absolute ft-regular ab-right text-upper">-30%</div>
 										<div class="card-body p-0">
 											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/5.png" alt="..."></a>
+												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/5.png')}}" alt="..."></a>
 												<div class="product-left-hover-overlay">
 													<ul class="left-over-buttons">
 														<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
@@ -637,7 +260,7 @@
 										<div class="badge bg-info text-white position-absolute ft-regular ab-left text-upper">New</div>
 										<div class="card-body p-0">
 											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/6.png" alt="..."></a>
+												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/6.png')}}" alt="..."></a>
 												<div class="product-left-hover-overlay">
 													<ul class="left-over-buttons">
 														<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
@@ -672,7 +295,7 @@
 										<div class="badge bg-success text-white position-absolute ft-regular ab-left text-upper">Sale</div>
 										<div class="card-body p-0">
 											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/7.png" alt="..."></a>
+												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="{{('kumo/img/shop/7.png')}}" alt="..."></a>
 												<div class="product-left-hover-overlay">
 													<ul class="left-over-buttons">
 														<li><a href="javascript:void(0);" class="d-inline-flex circle align-items-center justify-content-center"><i class="fas fa-expand-arrows-alt position-absolute"></i></a></li>
@@ -775,7 +398,7 @@
 							
 							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
 								<div class="footer_widget">
-									<img src="{{('kumo/img/logo-light.png" class="img-footer small mb-2" alt="" />
+									<img src="{{('kumo/img/logo-light.png')}}" class="img-footer small mb-2" alt="" />
 									
 									<div class="address mt-3">
 										3298 Grant Street Longview, TX<br>United Kingdom 75601	
@@ -848,7 +471,7 @@
 									</div>
 									<div class="address mt-3">
 										<h5 class="fs-sm text-light">Secure Payments</h5>
-										<div class="scr_payment"><img src="{{('kumo/img/card.png" class="img-fluid" alt="" /></div>
+										<div class="scr_payment"><img src="{{('kumo/img/card.png')}}" class="img-fluid" alt="" /></div>
 									</div>
 								</div>
 							</div>
@@ -884,16 +507,15 @@
 					
 								<div class="quick_view_thmb">
 									<div class="quick_view_slide">
-										<div class="single_view_slide"><img src="{{('kumo/img/product/1.jpg" class="img-fluid" alt="" /></div>
-										<div class="single_view_slide"><img src="{{('kumo/img/product/2.jpg" class="img-fluid" alt="" /></div>
-										<div class="single_view_slide"><img src="{{('kumo/img/product/3.jpg" class="img-fluid" alt="" /></div>
-										<div class="single_view_slide"><img src="{{('kumo/img/product/4.jpg" class="img-fluid" alt="" /></div>
+										<div class="single_view_slide"><img src="{{('kumo/img/product/1.jpg')}}" class="img-fluid" alt="" /></div>
+										<div class="single_view_slide"><img src="{{('kumo/img/product/2.jpg')}}" class="img-fluid" alt="" /></div>
+										<div class="single_view_slide"><img src="{{('kumo/img/product/3.jpg')}}" class="img-fluid" alt="" /></div>
+										<div class="single_view_slide"><img src="{{('kumo/img/product/4.jpg')}}" class="img-fluid" alt="" /></div>
 									</div>
 								</div>
 								
 								<div class="quick_view_capt">
 									<div class="prd_details">
-										
 										<div class="prt_01 mb-1"><span class="text-light bg-info rounded px-2 py-1">Dresses</span></div>
 										<div class="prt_02 mb-2">
 											<h2 class="ft-bold mb-1">Women Striped Shirt Dress</h2>
@@ -1083,80 +705,7 @@
 			
 			<!-- Search -->
 			<div class="w3-ch-sideBar w3-bar-block w3-card-2 w3-animate-right" style="display:none;right:0;" id="Search">
-				<div class="rightMenu-scroll">
-					<div class="d-flex align-items-center justify-content-between slide-head py-3 px-3">
-						<h4 class="cart_heading fs-md ft-medium mb-0">Search Products</h4>
-						<button onclick="closeSearch()" class="close_slide"><i class="ti-close"></i></button>
-					</div>
-						
-					<div class="cart_action px-3 py-4">
-						<form class="form m-0 p-0">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Product Keyword.." />
-							</div>
-							
-							<div class="form-group">
-								<select class="custom-select">
-								  <option value="1" selected="">Choose Category</option>
-								  <option value="2">Men's Store</option>
-								  <option value="3">Women's Store</option>
-								  <option value="4">Kid's Fashion</option>
-								  <option value="5">Inner Wear</option>
-								</select>
-							</div>
-							
-							<div class="form-group mb-0">
-								<button type="button" class="btn d-block full-width btn-dark">Search Product</button>
-							</div>
-						</form>
-					</div>
-					
-					<div class="d-flex align-items-center justify-content-center br-top br-bottom py-2 px-3">
-						<h4 class="cart_heading fs-md mb-0">Hot Categories</h4>
-					</div>
-						
-					<div class="cart_action px-3 py-3">
-						<div class="row">
-							<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-								<div class="cats_side_wrap text-center">
-									<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="{{('kumo/img/tshirt.png" class="img-fluid" width="40" alt="" /></a></div></div>
-									<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">T-Shirts</a></h6></div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-								<div class="cats_side_wrap text-center">
-									<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="{{('kumo/img/pant.png" class="img-fluid" width="40" alt="" /></a></div></div>
-									<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Pants</a></h6></div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-								<div class="cats_side_wrap text-center">
-									<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="{{('kumo/img/fashion.png" class="img-fluid" width="40" alt="" /></a></div></div>
-									<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Women's</a></h6></div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-								<div class="cats_side_wrap text-center">
-									<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="{{('kumo/img/sneakers.png" class="img-fluid" width="40" alt="" /></a></div></div>
-									<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Shoes</a></h6></div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-								<div class="cats_side_wrap text-center">
-									<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="{{('kumo/img/television.png" class="img-fluid" width="40" alt="" /></a></div></div>
-									<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Television</a></h6></div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-								<div class="cats_side_wrap text-center">
-									<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="{{('kumo/img/accessories.png" class="img-fluid" width="40" alt="" /></a></div></div>
-									<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Accessories</a></h6></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
+				<shop-form-search></shop-form-search>
 			</div>
 			
 			<!-- Wishlist -->
@@ -1166,71 +715,7 @@
 						<h4 class="cart_heading fs-md ft-medium mb-0">Saved Products</h4>
 						<button onclick="closeWishlist()" class="close_slide"><i class="ti-close"></i></button>
 					</div>
-					<div class="right-ch-sideBar">
-						
-						<div class="cart_select_items py-2">
-							<!-- Single Item -->
-							<div class="d-flex align-items-center justify-content-between br-bottom px-3 py-3">
-								<div class="cart_single d-flex align-items-center">
-									<div class="cart_selected_single_thumb">
-										<a href="#"><img src="{{('kumo/img/product/4.jpg" width="60" class="img-fluid" alt="" /></a>
-									</div>
-									<div class="cart_single_caption pl-2">
-										<h4 class="product_title fs-sm ft-medium mb-0 lh-1">Women Striped Shirt Dress</h4>
-										<p class="mb-2"><span class="text-dark ft-medium small">36</span>, <span class="text-dark small">Red</span></p>
-										<h4 class="fs-md ft-medium mb-0 lh-1">$129</h4>
-									</div>
-								</div>
-								<div class="fls_last"><button class="close_slide gray"><i class="ti-close"></i></button></div>
-							</div>
-							
-							<!-- Single Item -->
-							<div class="d-flex align-items-center justify-content-between br-bottom px-3 py-3">
-								<div class="cart_single d-flex align-items-center">
-									<div class="cart_selected_single_thumb">
-										<a href="#"><img src="{{('kumo/img/product/7.jpg" width="60" class="img-fluid" alt="" /></a>
-									</div>
-									<div class="cart_single_caption pl-2">
-										<h4 class="product_title fs-sm ft-medium mb-0 lh-1">Girls Floral Print Jumpsuit</h4>
-										<p class="mb-2"><span class="text-dark ft-medium small">36</span>, <span class="text-dark small">Red</span></p>
-										<h4 class="fs-md ft-medium mb-0 lh-1">$129</h4>
-									</div>
-								</div>
-								<div class="fls_last"><button class="close_slide gray"><i class="ti-close"></i></button></div>
-							</div>
-							
-							<!-- Single Item -->
-							<div class="d-flex align-items-center justify-content-between px-3 py-3">
-								<div class="cart_single d-flex align-items-center">
-									<div class="cart_selected_single_thumb">
-										<a href="#"><img src="{{('kumo/img/product/8.jpg" width="60" class="img-fluid" alt="" /></a>
-									</div>
-									<div class="cart_single_caption pl-2">
-										<h4 class="product_title fs-sm ft-medium mb-0 lh-1">Girls Solid A-Line Dress</h4>
-										<p class="mb-2"><span class="text-dark ft-medium small">30</span>, <span class="text-dark small">Blue</span></p>
-										<h4 class="fs-md ft-medium mb-0 lh-1">$100</h4>
-									</div>
-								</div>
-								<div class="fls_last"><button class="close_slide gray"><i class="ti-close"></i></button></div>
-							</div>
-							
-						</div>
-						
-						<div class="d-flex align-items-center justify-content-between br-top br-bottom px-3 py-3">
-							<h6 class="mb-0">Subtotal</h6>
-							<h3 class="mb-0 ft-medium">$417</h3>
-						</div>
-						
-						<div class="cart_action px-3 py-3">
-							<div class="form-group">
-								<button type="button" class="btn d-block full-width btn-dark">Move To Cart</button>
-							</div>
-							<div class="form-group">
-								<button type="button" class="btn d-block full-width btn-dark-light">Edit or View</button>
-							</div>
-						</div>
-						
-					</div>
+					<shop-mini-wishlist />
 				</div>
 			</div>
 			
@@ -1241,125 +726,53 @@
 						<h4 class="cart_heading fs-md ft-medium mb-0">Products List</h4>
 						<button onclick="closeCart()" class="close_slide"><i class="ti-close"></i></button>
 					</div>
-					<div class="right-ch-sideBar">
-						
-						<div class="cart_select_items py-2">
-							<!-- Single Item -->
-							<div class="d-flex align-items-center justify-content-between br-bottom px-3 py-3">
-								<div class="cart_single d-flex align-items-center">
-									<div class="cart_selected_single_thumb">
-										<a href="#"><img src="{{('kumo/img/product/4.jpg" width="60" class="img-fluid" alt="" /></a>
-									</div>
-									<div class="cart_single_caption pl-2">
-										<h4 class="product_title fs-sm ft-medium mb-0 lh-1">Women Striped Shirt Dress</h4>
-										<p class="mb-2"><span class="text-dark ft-medium small">36</span>, <span class="text-dark small">Red</span></p>
-										<h4 class="fs-md ft-medium mb-0 lh-1">$129</h4>
-									</div>
-								</div>
-								<div class="fls_last"><button class="close_slide gray"><i class="ti-close"></i></button></div>
-							</div>
-							
-							<!-- Single Item -->
-							<div class="d-flex align-items-center justify-content-between br-bottom px-3 py-3">
-								<div class="cart_single d-flex align-items-center">
-									<div class="cart_selected_single_thumb">
-										<a href="#"><img src="{{('kumo/img/product/7.jpg" width="60" class="img-fluid" alt="" /></a>
-									</div>
-									<div class="cart_single_caption pl-2">
-										<h4 class="product_title fs-sm ft-medium mb-0 lh-1">Girls Floral Print Jumpsuit</h4>
-										<p class="mb-2"><span class="text-dark ft-medium small">36</span>, <span class="text-dark small">Red</span></p>
-										<h4 class="fs-md ft-medium mb-0 lh-1">$129</h4>
-									</div>
-								</div>
-								<div class="fls_last"><button class="close_slide gray"><i class="ti-close"></i></button></div>
-							</div>
-							
-							<!-- Single Item -->
-							<div class="d-flex align-items-center justify-content-between px-3 py-3">
-								<div class="cart_single d-flex align-items-center">
-									<div class="cart_selected_single_thumb">
-										<a href="#"><img src="{{('kumo/img/product/8.jpg" width="60" class="img-fluid" alt="" /></a>
-									</div>
-									<div class="cart_single_caption pl-2">
-										<h4 class="product_title fs-sm ft-medium mb-0 lh-1">Girls Solid A-Line Dress</h4>
-										<p class="mb-2"><span class="text-dark ft-medium small">30</span>, <span class="text-dark small">Blue</span></p>
-										<h4 class="fs-md ft-medium mb-0 lh-1">$100</h4>
-									</div>
-								</div>
-								<div class="fls_last"><button class="close_slide gray"><i class="ti-close"></i></button></div>
-							</div>
-							
-						</div>
-						
-						<div class="d-flex align-items-center justify-content-between br-top br-bottom px-3 py-3">
-							<h6 class="mb-0">Subtotal</h6>
-							<h3 class="mb-0 ft-medium">$1023</h3>
-						</div>
-						
-						<div class="cart_action px-3 py-3">
-							<div class="form-group">
-								<button type="button" class="btn d-block full-width btn-dark">Checkout Now</button>
-							</div>
-							<div class="form-group">
-								<button type="button" class="btn d-block full-width btn-dark-light">Edit or View</button>
-							</div>
-						</div>
-						
-					</div>
+					<shop-mini-cart />
 				</div>
 			</div>
-			
 			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
-			
-
 		</div>
-		<!-- ============================================================== -->
-		<!-- End Wrapper -->
-		<!-- ============================================================== -->
+	</div>
+	<script src="{{asset('js/app.js')}}"></script>
+	<script src="{{asset('kumo/js/jquery.min.js')}}"></script>
+	<script src="{{asset('kumo/js/popper.min.js')}}"></script>
+	<script src="{{asset('kumo/js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('kumo/js/ion.rangeSlider.min.js')}}"></script>
+	<script src="{{asset('kumo/js/slick.js')}}"></script>
+	<script src="{{asset('kumo/js/slider-bg.js')}}"></script>
+	<script src="{{asset('kumo/js/lightbox.js')}}"></script> 
+	<script src="{{asset('kumo/js/smoothproducts.js')}}"></script>
+	<script src="{{asset('kumo/js/snackbar.min.js')}}"></script>
+	<script src="{{asset('kumo/js/jQuery.style.switcher.js')}}"></script>
+	<script src="{{asset('kumo/js/custom.js')}}"></script> -->
+	<!-- ============================================================== -->
+	<!-- This page plugins -->
+	<!-- ============================================================== -->	
 
-		<!-- ============================================================== -->
-		<!-- All Jquery -->
-		<!-- ============================================================== -->
-		<script src="{{('kumo/js/jquery.min.js"></script>
-		<script src="{{('kumo/js/popper.min.js"></script>
-		<script src="{{('kumo/js/bootstrap.min.js"></script>
-		<script src="{{('kumo/js/ion.rangeSlider.min.js"></script>
-		<script src="{{('kumo/js/slick.js"></script>
-		<script src="{{('kumo/js/slider-bg.js"></script>
-		<script src="{{('kumo/js/lightbox.js"></script> 
-		<script src="{{('kumo/js/smoothproducts.js"></script>
-		<script src="{{('kumo/js/snackbar.min.js"></script>
-		<script src="{{('kumo/js/jQuery.style.switcher.js"></script>
-		<script src="{{('kumo/js/custom.js"></script>
-		<!-- ============================================================== -->
-		<!-- This page plugins -->
-		<!-- ============================================================== -->	
+	<script>
+		function openWishlist() {
+			document.getElementById("Wishlist").style.display = "block";
+		}
+		function closeWishlist() {
+			document.getElementById("Wishlist").style.display = "none";
+		}
+	</script>
+	
+	<script>
+		function openCart() {
+			document.getElementById("Cart").style.display = "block";
+		}
+		function closeCart() {
+			document.getElementById("Cart").style.display = "none";
+		}
+	</script>
 
-		<script>
-			function openWishlist() {
-				document.getElementById("Wishlist").style.display = "block";
-			}
-			function closeWishlist() {
-				document.getElementById("Wishlist").style.display = "none";
-			}
-		</script>
-		
-		<script>
-			function openCart() {
-				document.getElementById("Cart").style.display = "block";
-			}
-			function closeCart() {
-				document.getElementById("Cart").style.display = "none";
-			}
-		</script>
-
-		<script>
-			function openSearch() {
-				document.getElementById("Search").style.display = "block";
-			}
-			function closeSearch() {
-				document.getElementById("Search").style.display = "none";
-			}
-		</script>		
-	</body>
+	<script>
+		function openSearch() {
+			document.getElementById("Search").style.display = "block";
+		}
+		function closeSearch() {
+			document.getElementById("Search").style.display = "none";
+		}
+	</script>		
+</body>
 </html>

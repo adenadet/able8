@@ -6,7 +6,7 @@
                     <div class="headd-sty-left d-flex align-items-center">
                         <div class="headd-sty-01">
                             <a class="nav-brand py-0" href="#">
-                                <img src="{{('img/logo-light.png')}}" class="logo" alt="" />
+                                <img src="{{('img/laable_logo_white.jpeg')}}" class="img-circle logo" alt="" />
                             </a>
                         </div>
                         <div class="headd-sty-02 ml-3">
